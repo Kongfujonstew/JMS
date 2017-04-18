@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import {Socials} from './socials.js';
 
 var consFunc = require('./consFunc');
 
@@ -22,6 +23,7 @@ class App extends React.Component {
         <div id="red" className="flexbox"></div>
       </div>
       <div id="name">Jon Michael Stewart</div>
+      <Socials />
     </div>
     )
   }
