@@ -32,16 +32,16 @@ body {
 
 #name {
   font-family: Permanent Marker;
-  font-size: .65em;
+  font-size: 1em;
   padding: 2%;
-  border: 3px solid grey;
-  border-radius: 5px;
+  border: 5px solid black;
+  border-radius: 20px;
   background-color: white;
   margin: 2px;
   width: 70%
   color: white;
   z-index: 10;
-  top: 65%;
+  top: 57%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -49,10 +49,10 @@ body {
 
 #socials {
   width: 50%;
-  height: 10%;
+  height: 15%;
   padding: 1%;
   z-index: 10;
-  top: 83%;
+  top: 78%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -60,8 +60,8 @@ body {
 
 
 .social {
-  width: 10%;
-  margin: 0 4% 0 4%;
+  width: 15%;
+  margin: 0 6% 0 6%;
 }
 
 .social:hover {
@@ -69,14 +69,6 @@ body {
 }
 
 
-#facebook {
-/*  width: 10%;
-  height: 10%;
-  margin: 0 5px 0 5px;
-  padding: 1px;
-  background-color: yellow;
-  background-size: cover;*/
-  /*background: url('../images/facebook-128.png');*/
-}
+
 
 

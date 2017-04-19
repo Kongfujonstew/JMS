@@ -14,3 +14,7 @@ console.log("Listening on port " + port);
 
 app.use(express.static('src/client'));
 // Render some console log output
+
+app.get('/test', function(req, res) {
+  res.render('src/client/app/testArea.js');
+})
