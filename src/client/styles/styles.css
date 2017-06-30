@@ -1,12 +1,16 @@
 
-
-body {
-  background-color: none;
-  margin: 0;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    padding: 0 0;
 }
 
 
 .flexContainer {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -17,57 +21,104 @@ body {
   justify-content: center;
 }
 
-
-#blue {
-  background-color: #0077FF;
-  width: 100%;
-  height: 100%;
-}
-
-#red {
-  background-color: #DF3333;
-  width: 100%;
-  height: 100%;
-}
-
-#name {
-  font-family: Permanent Marker;
-  font-size: 1em;
-  padding: 2%;
-  border: 5px solid black;
-  border-radius: 20px;
-  background-color: white;
-  margin: 2px;
-  width: 70%
-  color: white;
-  z-index: 10;
-  top: 57%;
-  left: 50%;
-  transform: translateX(-50%);
+#background {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
 }
 
-#socials {
+#main {
+  z-index: 1;
+}
+
+.zeppelin {
+  background-color: black;
+  width: 30%;
+}
+
+.contact {
   width: 50%;
-  height: 15%;
-  padding: 1%;
-  z-index: 10;
-  top: 78%;
-  left: 50%;
-  transform: translateX(-50%);
+  background: linear-gradient(to right, #4d4c4c, #050505)
+}
+
+.about {
+  width: 50%;
+  background: linear-gradient(to right, #6e6b6b, #474545)
+}
+
+.china {
+  width: 50%;
+  background: linear-gradient(to right, #e6c6c6, #801515)
+}
+
+.dev {
+  width: 160%;
+  background: linear-gradient(to right, #e0ded7, #e0ded7)
+}
+
+.upload {
+  width: 40%;
+  background: linear-gradient(to right, #69cfe3, #e0ded7)
+}
+
+#floaterText {
+  pointer-events: none;
+  font-size: 2em;
   position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 30%;
 }
 
-
-.social {
-  width: 15%;
-  margin: 0 6% 0 6%;
+div .column {
+  height: 80%;
+  margin: 0 0;
+  padding: 0 0;
 }
 
-.social:hover {
-  cursor: pointer;
+div .noMoveYet {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+div .backgroundColumn {
+  filter: brightness(.50);
+  height: 100%;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+div .poppedDownColumn {
+  animation: popDown .4s;
+  height: 80%;
+}
+
+div .poppedUpColumn {
+  animation: popUp .4s;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@keyframes popUp {
+  0% {height: 80%;}
+  33% {height: 100%;}
+  50% {height: 100%;}
+  66% {height: 97%;}
+  100% {height: 100%;}
+}
+
+@keyframes popDown {
+  0% {height: 100%;}
+  33% {height: 80%;}
+  50% {height: 80%;}
+  66% {height: 83%;}
+  100% {height: 80%;}
+}
 
 
 
