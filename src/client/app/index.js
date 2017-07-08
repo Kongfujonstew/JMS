@@ -1,110 +1,130 @@
 import React from 'react';
 import {render} from 'react-dom';
-// import {Socials} from './socials.js';
-import Column from './column.js';
-import Background from './background.js';
-
+import {About} from './about.js';
+import {Work} from './work.js';
+import {Blog} from './blog.js';
+import {China} from './china.js';
+import {Contact} from './contact.js';
+import {Name} from './name.jsx';
+import classNames from 'classnames';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      displayText: '',
-      upDown: true
+      aboutClass: classNames('page'),
+      workClass: classNames('page'),
+      blogClass: classNames('page'),
+      chinaClass: classNames('page'),
+      contactClass: classNames('flexcontainer page')
     }
   }
 
-  handleAllDown () {
-    console.log('handleAllDown')
+  handleContactClick (navElement) {
+    console.log('clicked', navElement)
+    switch (navElement) {
+      case 'about' :
+        this.setState({
+          aboutClass: classNames('page clicked')
+        });
+        break;
+      case 'work' :
+        this.setState({
+          workClass: classNames('page clicked')
+        });
+        break;
+      case 'blog' :
+        this.setState({
+          blogClass: classNames('page clicked')
+        });
+        break;
+      case 'china' :
+        this.setState({
+          chinaClass: classNames('page clicked')
+        });
+        break;
+      case 'contact' :
+        this.setState({
+          contactClass: classNames('page clicked')
+        });
+        break;
+    }
+  }
+
+  handleRemove () {
+    console.log('yeah, clicked')
     this.setState({
-      upDown: false
-    })
+      aboutClass: classNames('page'),
+      workClass: classNames('page'),
+      blogClass: classNames('page'),
+      chinaClass: classNames('page'),
+      contactClass: classNames('page')
+    });
   }
-
-  handleAllUp () {
-    console.log('handleAllUp')
-    this.setState({
-      upDown: true
-    })
-  }
-
-  changeDisplayText (columnName) {
-    console.log('changeDisplayText triggered')
-    this.setState({"displayText": columnName})
-  }
-
-  removeDisplayText () {
-    this.setState({"displayText": ""})
-  }
-
 
   render () {
     return (
-      <div id="main"
-        onMouseEnter={this.handleAllDown.bind(this)}
-        onMouseLeave={this.handleAllUp.bind(this)}
-      >
-        <div id="flexContainer" className="flexContainer">
-          <Column columnName="zeppelin" 
-            upDown={this.state.upDown}
-            changeDisplayText={this.changeDisplayText.bind(this, "Zeppelin")}
-            removeDisplayText={this.removeDisplayText.bind(this)}
+      <div id="main">
 
-          />
-          <Column columnName="contact" 
-            upDown={this.state.upDown}
-            changeDisplayText={this.changeDisplayText.bind(this, "Contact")}
-            removeDisplayText={this.removeDisplayText.bind(this)}
+        <div id="title">JON MICHAEL STEWART || FULL STACK JAVASCRIPT</div>
 
+        <div id="pages">
+          <About
+            classes={this.state.aboutClass}
+            remove={this.handleRemove.bind(this)}
           />
-          <Column columnName="about" 
-            upDown={this.state.upDown}
-            changeDisplayText={this.changeDisplayText.bind(this, "About")}
-            removeDisplayText={this.removeDisplayText.bind(this)}
+          <Work
+            classes={this.state.workClass}
+            remove={this.handleRemove.bind(this)}
           />
-          <Column columnName="china" 
-            upDown={this.state.upDown}
-            changeDisplayText={this.changeDisplayText.bind(this, "China")}
-            removeDisplayText={this.removeDisplayText.bind(this)}
+          <Blog
+            classes={this.state.blogClass}
+            remove={this.handleRemove.bind(this)}
           />
-          <Column columnName="dev" 
-            upDown={this.state.upDown}
-            changeDisplayText={this.changeDisplayText.bind(this, "Web Development")}
-            removeDisplayText={this.removeDisplayText.bind(this)}
+          <China
+            classes={this.state.chinaClass}
+            remove={this.handleRemove.bind(this)}
           />
-          <Column columnName="upload" 
-            upDown={this.state.upDown}
-            changeDisplayText={this.changeDisplayText.bind(this, "Upload")}
-            removeDisplayText={this.removeDisplayText.bind(this)}
+          <Contact
+            classes={this.state.contactClass}
+            remove={this.handleRemove.bind(this)}
           />
         </div>
-        {this._renderFloater()}
-        <Background />
-      </div>
 
+        <div id="nav">
+          <text
+            onClick={this.handleContactClick.bind(this, 'about')}
+          >ABOUT</text>
+          <text
+            onClick={this.handleContactClick.bind(this, 'work')}
+          >WORK</text>
+          <text
+            onClick={this.handleContactClick.bind(this, 'blog')}
+          >BLOG</text>
+          <text
+            onClick={this.handleContactClick.bind(this, 'china')}
+          >CHINA</text>
+          <text
+            onClick={this.handleContactClick.bind(this, 'contact')}
+          >CONTACT</text>
+        </div>
+        
+        <Name />
+      </div>
     )
   }
 
-  _renderFloater () {
-    if (!this.state.displayText) {  
-      return (
-        <h1 id="floaterText">Jon Michael Stewart</h1>
-      )
-    } else {
-      return (
-        <h1 id="floaterText">{this.state.displayText}</h1>
-      )
-    }
+  _renderConsoleGreeting () {
+    return (
+      <script>
+
+
+      </script>
+    )
   }
 
 }
 
 export default App;
 
-// removeDisplayText={this.removeDisplayText.bind(this)}
-// upDown={this.props.upDown}
-
-
 render(<App/>, document.getElementById('app'));
-
