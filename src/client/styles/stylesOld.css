@@ -1,0 +1,168 @@
+stylesOld.css
+
+
+html, body {
+  background-color: #222222;
+  width: 100%;
+  height: 100%;
+  min-height: 600px
+  margin: 0 0;
+  padding: 0 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+#app div {
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*.flexContainer {
+  margin: 0;
+  padding: 0;
+/*  height: 100%;*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+*/
+
+
+
+/*
+Center & Onload Animation
+*/
+
+#circle {
+  width: 300px;
+  filter: invert(30%);
+}
+
+#circle.onload {
+  animation-name: flash;
+  animation-duration: 1.8s;
+  animation-delay: 1s;
+}
+#title {
+  color: red;
+  padding: 20px;
+  text-align: center;
+}
+
+#nav {
+/*  bottom: -100;*/
+  color:red;
+  padding: 30px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+#nav text {
+  padding: 0 1% 0 1%;
+}
+
+#nav text:hover {
+  cursor: pointer;
+}
+
+#open {
+  position:absolute;
+  top: 50%;
+  transform: translateY(-15%);
+  margin: 0 auto;
+  top: 40%;
+  height: 400px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+
+@keyframes rotate {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+@keyframes flash {
+  0%   {filter: invert(13%);}
+  69%  {filter: invert(100%);}
+  100% {filter: invert(0%);}
+}
+
+#name {
+  position:absolute;
+  top: 45%;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 3em;
+  opacity: 0;
+}
+
+#name.onload {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode:forwards, none;
+  animation-timing-function:ease-in;
+}
+
+@keyframes fadeIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#welcome {
+  position:absolute;
+  top: 35%;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 1;
+}
+
+#welcome.onload {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode:forwards, none;
+  animation-timing-function:ease-in;
+}
+
+@keyframes fadeOut {
+  0%   {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+/*
+Page Animations
+*/
+.page {
+  position: absolute;
+  top:0;
+  border: 2px solid white;
+  height: 600px;
+  width: 900px;
+  transform: rotateX(-90deg);
+  transform: rotateY(90deg);
+/*  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  -o-transform-origin: 100% 0;*/
+  transform-origin: 0 0;
+  transform-origin:center;
+}
+
+.page.clicked {
+  height: 80%;
+  width: 80%;
+  transform: rotateX(0deg);
+  transform: rotateY(0deg);
+  transition: all 1s;
+}
+*/

@@ -13,7 +13,7 @@ export class China extends React.Component {
 
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
-      <div id="contact" 
+      <div id="china" 
         className={this.props.classes}
         onClick={this.props.remove}
       >

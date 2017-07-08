@@ -13,7 +13,7 @@ export class About extends React.Component {
 
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
-      <div id="contact" 
+      <div id="about" 
         className={this.props.classes}
         onMouseOver={this.props.remove}
       >

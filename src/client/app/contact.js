@@ -30,7 +30,7 @@ export class Contact extends React.Component {
       <div id="contact" 
         className={this.props.classes}
         onClick={this.props.remove}
-      >
+      > 
 
         <img id="linkedin" className="social" src="../images/linkedin-128.png"
           onClick={this.handleLinkedinClick.bind(this)}

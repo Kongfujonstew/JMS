@@ -13,7 +13,7 @@ export class Blog extends React.Component {
 
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
-      <div id="contact" 
+      <div id="blog" 
         className={this.props.classes}
         onClick={this.props.remove}
       >
