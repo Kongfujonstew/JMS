@@ -28,19 +28,19 @@ export class Work extends React.Component {
       "../images/yelp.jpg",
     ]
 
+        // <div id="scroll">
+        //   {pics.map((pic, index) =>
+        //     <img
+        //       key={index}
+        //       className="pic "
+        //     >Hello</img>
+        //   )
+        //   }
+        // </div>
     return (
       <div id="work" className="flexContainer"
       >
 
-        <div id="scroll">
-          {pics.map((pic, index) =>
-            <img
-              key={index}
-              className="pic "
-            >Hello</img>
-          )
-          }
-        </div>
 
       </div>
     )
