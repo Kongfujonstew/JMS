@@ -1,6 +1,6 @@
 
 html, body {
-  background-color: #444444;
+  background-color: #222222;
   width: 100%;
   height: 100%;
   min-height: 600px
@@ -10,7 +10,7 @@ html, body {
   font-size: 1em;
 }
 
-body, #app, #main {
+body, #app, #main, #open {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -41,58 +41,78 @@ body, #app, #main {
 Center & Onload Animation
 */
 
-#circle {
+#title {
   position: absolute;
-  top: 30%;
+  top: 20px;
+  color: red;
+  width: 400px;
   left: 50%;
-  transform: translateX(-150px);
+  transform: translateX(-200px);
+}
+
+#center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-300px);
+
+  color: white;
+  text-align: center;
+  height: 300px;
+  width: 600px;
+}
+
+#circle {
   height: 300px;
   width: 300px;
   filter: invert(20%);
 }
 
-#circle.preload {
-  filter: invert(20%);
-}
-
 #circle.onload {
   animation-name: flash;
-  animation-duration: 1.8s;
-  animation-delay: 1s;
+  animation-duration: 3.2s;
+  animation-fill-mode:forwards, none;
+  animation-timing-function: ease-out;
 }
 
-#circle.about {
-
+@keyframes flash {
+  0%   {filter: invert(20%);}
+  60%  {filter: invert(100%);}
+  100% {filter: invert(20%);}
 }
 
-#circle.work {
-
+#name {
+  position:absolute;
+  top: 60%;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 3em;
 }
 
-#circle.blog {
-
+#welcome {
+  position:absolute;
+  top: 50%;
+  margin: 0 auto;
+  width: 100%;
 }
 
-#circle.china {
-
+#welcome.onload {
+  animation-name: fadeOut;
+  animation-duration: 2s;
+  animation-fill-mode:forwards, none;
+  animation-timing-function: ease-in;
+  animation-delay: 6s;
 }
 
-#circle.contact {
-
-}
-
-
-#title {
-  color: red;
-  padding: 20px;
-  text-align: center;
+@keyframes fadeOut {
+  0%   {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 #nav {
   position: absolute;
-  width: 80%;
+  width: 100%;
   bottom: 10px;
-  left: 10%;
 /*  bottom: -100;*/
   color:red;
   position: absolute;
@@ -107,125 +127,45 @@ Center & Onload Animation
   cursor: pointer;
 }
 
-#open {
-  position:absolute;
-  top: 50%;
-  transform: translateY(-15%);
-  margin: 0 auto;
-  top: 40%;
-  height: 400px;
-  text-align: center;
-  width: 100%;
-  color: white;
-}
-
-@keyframes rotate {
-  0%   {transform: rotate(0deg);}
-  100% {transform: rotate(-360deg);}
-}
-
-@keyframes flash {
-  0%   {filter: invert(13%);}
-  69%  {filter: invert(100%);}
-  100% {filter: invert(0%);}
-}
-
-#name {
-  position:absolute;
-  top: 45%;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 3em;
-  opacity: 1;
-}
-
-#name.onload {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-fill-mode:forwards, none;
-  animation-timing-function:ease-in;
-}
-
-@keyframes fadeIn {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-#welcome {
-  position:absolute;
-  top: 35%;
-  margin: 0 auto;
-  width: 100%;
-  opacity: 1;
-}
-
-#welcome.onload {
-  animation-name: fadeOut;
-  animation-duration: 1s;
-  animation-fill-mode:forwards, none;
-}
-
-@keyframes fadeOut {
-  0%   {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-
 /*
-Page Animations
+Pages
 */
 
-#about {
-  position: absolute;
-  top: 2%;
-  left: 5%;
-  height: 10%;
-  width: 10%;
-  background-color: #222222;
-  box-shadow: 6px 6px 20px darkgrey;
-  /*transform: rotateY(-90deg);*/
-  transform: skewY(-90deg);
-  transform-origin: 0% 0%;
-  transition: all .3s ease-out;
+.page {
+  height:100%;
+  width: 100%;
 }
 
-#about.focused {
-  height: 90%;
-  width: 90%;
-  /*transform: rotateY(0deg);*/
-  transform: skewY(0deg);
+#about {
 }
+
 
 #work {
-  transform: rotateX(90deg);
 
 }
 
-#work.focused {
+#scroll {
+  position: relative;
+  top: 40%;
+  height: 400px;
+  width: 100%;
+  background-color: orange;
+}
+
+.pic {
   
 }
 
 #blog {
-  transform: rotateX(90deg);
 }
 
-#blog.focused {
-  
-}
+
 
 #china {
-  transform: rotateX(90deg);
 }
 
-#china.focused {
-  
-}
 
 #contact {
-  transform: rotateX(90deg);
 }
 
-#about.focused {
-  
-}
 

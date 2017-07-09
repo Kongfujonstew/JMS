@@ -8,18 +8,39 @@ export class Work extends React.Component {
   }
 
   render () {
-      // <img id="wechat" className="social" src="../images/wechat.png"></img>
-      // <img id="twitter" className="social" src="../images/twitter-128.png"></img>
 
-      // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
+    var pics = [
+      "../images/angular.png",
+      "../images/react.svg",
+      "../images/nodenoblack.png",
+      "../images/d3.png",
+      "../images/socketio.png",
+      "../images/express.png",
+      "../images/googlemaps.jpg",
+      "../images/htmljscss.png",
+      "../images/images-1.png",
+      "../images/js.png",
+      "../images/mongodb.png",
+      "../images/mysql.png",
+      "../images/bookshelf.png",
+      "../images/reddis.png",
+      "../images/seek.png",
+      "../images/yelp.jpg",
+    ]
+
     return (
-      <div id="work" 
-        className={this.props.classes}
-        onClick={this.props.remove}
+      <div id="work" className="flexContainer"
       >
 
-        <img id="linkedin" className="social" src="../images/linkedin-128.png"
-        ></img>
+        <div id="scroll">
+          {pics.map((pic, index) =>
+            <div
+              key={index}
+              className="pic "
+            >Hello</div>
+          )
+          }
+        </div>
 
       </div>
     )

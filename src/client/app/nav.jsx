@@ -13,7 +13,7 @@ export class Nav extends React.Component {
     return (
         <div id="nav">
           <text
-            onClick={this.props.handleAboutClick}
+
           >ABOUT</text>
           <text
           >WORK</text>
