@@ -34,10 +34,10 @@ export class Work extends React.Component {
 
         <div id="scroll">
           {pics.map((pic, index) =>
-            <div
+            <img
               key={index}
               className="pic "
-            >Hello</div>
+            >Hello</img>
           )
           }
         </div>
