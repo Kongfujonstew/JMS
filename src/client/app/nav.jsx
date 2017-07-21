@@ -11,8 +11,8 @@ export class Nav extends React.Component {
 
   render () {
     return (
-        <div id="nav">
-          <text
+        <div className="center-bottom-text nav red">
+          <text  className="red" 
 
           >ABOUT</text>
           <text

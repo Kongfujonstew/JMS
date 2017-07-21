@@ -1,171 +1,294 @@
 
+/*base
+layout/grids/major containers
+modules - specific interfaces 90% of site
+
+state - impacts modules and layout-someVisualAttribute
+theme*/
+
+
+/*use classes don't use ids*/
+
+/*
+BASE
+*/
+
 html, body {
-  background-color: #222222;
+  background-color: #333334;
   width: 100%;
-  height: 100%;
   min-height: 600px
-  margin: 0;
-  padding: 0 0;
+  padding: 0px;
+  margin: 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
 }
 
-body, #app, #main, #open {
+div, form {
+  margin: 0
+  padding: 0;
+}
+
+/*
+LAYOUT
+*/
+
+.windowSize {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-#nav {
-  margin: 0;
-  padding: 0;
-}
 
 .flexContainer {
-  margin: 0;
-  padding: 0;
-/*  height: 100%;*/
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+}
+
+.flexCenterVertical {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; 
+}
+
+.flexCenterHorizontal {
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 
+.flexOneofTwo {
+  width: 50%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexTwoofTWo {
+  width: 50%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexOneofThree {
+  width: 33.3%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexTwoofThree {
+  width: 33.3%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexThreeofThree {
+  width: 33.3%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
 
 /*
-Center & Onload Animation
+Module: Open & Onload Animation
 */
 
-#title {
+/*
+Title and Nav
+*/
+
+
+.center-top-text {
   position: absolute;
   top: 20px;
-  color: red;
   width: 400px;
   left: 50%;
   transform: translateX(-200px);
 }
 
-#center {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-300px);
-
-  color: white;
-  text-align: center;
-  height: 300px;
-  width: 600px;
-}
-
-#circle {
-  height: 300px;
-  width: 300px;
-  filter: invert(20%);
-}
-
-#circle.onload {
-  animation-name: flash;
-  animation-duration: 3.2s;
-  animation-fill-mode:forwards, none;
-  animation-timing-function: ease-out;
-}
-
-@keyframes flash {
-  0%   {filter: invert(20%);}
-  60%  {filter: invert(100%);}
-  100% {filter: invert(20%);}
-}
-
-#name {
-  position:absolute;
-  top: 60%;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 3em;
-}
-
-#welcome {
-  position:absolute;
-  top: 50%;
-  margin: 0 auto;
-  width: 100%;
-}
-
-#welcome.onload {
-  animation-name: fadeOut;
-  animation-duration: 2s;
-  animation-fill-mode:forwards, none;
-  animation-timing-function: ease-in;
-  animation-delay: 6s;
-}
-
-@keyframes fadeOut {
-  0%   {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-#nav {
+.center-bottom-text {
   position: absolute;
   width: 100%;
   bottom: 10px;
 /*  bottom: -100;*/
-  color:red;
   position: absolute;
   text-align: center;
-}
-
-#nav text {
   padding: 0 2% 0 2%;
 }
 
-#nav text:hover {
+.circle {
+  height: 300px;
+  width: 300px;
+  filter: invert(0%);
+}
+
+.name {
+  color: white;
+  margin: 0 auto;
+  font-size: 3em;
+}
+
+.nav text {
+  padding: 0 2% 0 2%;
+}
+
+.nav text:hover {
   cursor: pointer;
 }
 
+
+/*.circle .onload {
+  animation-name: flash;
+  animation-duration: 3.2s;
+  animation-fill-mode:forwards, none;
+  animation-timing-function: ease-out;
+}*/
+
+/*@keyframes flash {
+  0%   {filter: invert(20%);}
+  60%  {filter: invert(100%);}
+  100% {filter: invert(20%);}
+}*/
+
+
+.red {
+  color: red;
+}
+
+
+
 /*
-Pages
+Module: About
 */
 
-.page {
-  height:100%;
+.about {
+  background: repeating-linear-gradient(
+    45deg, 
+    #ccc, 
+    #ccc 20px, 
+    #dbdbdb 20px, 
+    #dbdbdb 22px
+  )
+}
+
+
+.title {
+  height: 30%;
+  background-color: white;
+}
+
+.aboutPic {
   width: 100%;
+  height: 70%;
 }
 
-#about {
+.jonFace {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 150px;
 }
 
+.grey {
+  filter: grayscale(100%);
+}
+
+/*#aboutP {
+  position: absolute;
+  padding: 10px;
+  left: 60%;
+}*/
+
+/*
+Module: Work
+*/
 
 #work {
+  display: block;
+  background-image: url('../images/marble.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 
+.work {
+  height: 33%;
+}
+
+/*.workPic {
+  width:200px;
+}*/
+
+
+/*
+Module: Tech
+*/
+
+#tech {
+  background-color: black;
 }
 
 #scroll {
   position: relative;
+  padding: 10px;
   top: 40%;
-  height: 400px;
+  height: 150px;
   width: 100%;
-  background-color: orange;
+  background-color: white;
+  overflow-x: scroll;
+  overflow-y:hidden;
 }
 
 .pic {
-  
+  height: 100%;
+  margin: 0 25px;
 }
 
-#blog {
+/*#blog {
+}*/
+
+
+/*
+Module: China
+*/
+
+#chinaOne {
+  min-width: 300px;
+  background-color: white;
+/*  width: 50%;*/
 }
 
-
-
-#china {
+#chinaTwo {
+  min-width: 300px;
+  background-color: black;
 }
 
+#chinaP {
+  width: 300px;
+}
+
+#jonChineseFarmers {
+  width: 300px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*
+Module: Contact
+*/
 
 #contact {
 }
 
+#socials {
+  height: 100%;
+}
+
+.social {
+  margin: 20px;
+}
+
+.social:hover {
+  cursor: pointer;
+}
 

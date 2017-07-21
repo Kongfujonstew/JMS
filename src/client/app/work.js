@@ -18,7 +18,6 @@ export class Work extends React.Component {
       "../images/express.png",
       "../images/googlemaps.jpg",
       "../images/htmljscss.png",
-      "../images/images-1.png",
       "../images/js.png",
       "../images/mongodb.png",
       "../images/mysql.png",
@@ -28,20 +27,47 @@ export class Work extends React.Component {
       "../images/yelp.jpg",
     ]
 
-        // <div id="scroll">
-        //   {pics.map((pic, index) =>
-        //     <img
-        //       key={index}
-        //       className="pic "
-        //     >Hello</img>
-        //   )
-        //   }
-        // </div>
+    var scrollY = document.body.scrollTop;
+    console.log(scrollY);
+
+    document.body.onscroll = () => {
+      console.log(document.body.scrollTop, document.body.scrollHeight)
+    }
+
+    // var scrollWindow = document.getElementById(#scroll);
+
+    var scrollStyle = {left: 0};
+
+
+    var wheel = (event) => {
+      event.preventDefault();
+      event.returnValue=false;
+    }
+
+    var scrollLeftRight = () => {
+      if (window.addEventListener) {
+        window.addEventListener('DOMMouseScroll',wheel,false);
+      }
+      window.onmousewheel=document.onmousewheel=wheel;
+    }
+
     return (
-      <div id="work" className="flexContainer"
-      >
+      <div id="tech" className="windowSize">
+        <div id="scroll" className="flexContainer" 
+          style={scrollStyle}
+          onMouseOver={scrollLeftRight}
+        >
+        {pics.map((pic, index) =>
+          <div>
+            <img
+              src={pic}
+              key={index}
+              className="pic"
+            />
+          </div>
 
-
+        )}
+        </div>
       </div>
     )
   }

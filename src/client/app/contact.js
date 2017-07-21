@@ -28,22 +28,24 @@ export class Contact extends React.Component {
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
       <div id="contact" 
-        className={this.props.classes}
+        className="windowSize"
         onClick={this.props.remove}
       > 
 
-        <img id="linkedin" className="social" src="../images/linkedin-128.png"
-          onClick={this.handleLinkedinClick.bind(this)}
-        ></img>
+        <div id="socials" className="flexCenterAll flexContainer">
+          <img id="linkedin" className="social" src="../images/linkedin-128.png"
+            onClick={this.handleLinkedinClick.bind(this)}
+          ></img>
 
-        <img id="skype" className="social" src="../images/skype-128.png"
-          onClick={this.handleSkypeClick.bind(this)}
-        ></img>
+          <img id="skype" className="social" src="../images/skype-128.png"
+            onClick={this.handleSkypeClick.bind(this)}
+          ></img>
 
-        <img id="email" className="social" src="../images/mail-128.png"
-          onClick={this.handleMailClick.bind(this)}
+          <img id="email" className="social" src="../images/mail-128.png"
+            onClick={this.handleMailClick.bind(this)}
 
-        ></img>
+          ></img>
+        </div>
 
       </div>
     )
