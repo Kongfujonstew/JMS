@@ -3,12 +3,13 @@ var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
 var APP_DIR = path.resolve(__dirname, 'src/client/app');
+var TEST_DIR = path.resolve(__dirname, 'src/client/appDup');
 
 var config = {
-  entry: APP_DIR,
+  entry: {app: APP_DIR, test: TEST_DIR},
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
   module : {
     loaders : [
