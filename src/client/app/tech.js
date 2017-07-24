@@ -24,6 +24,7 @@ export class Tech extends React.Component {
       "../images/googlemaps.jpg",
       "../images/htmljscss.png",
       "../images/js.png",
+      "../images/graphql.png",
       "../images/mongodb.png",
       "../images/mysql.png",
       "../images/bookshelf.png",
@@ -57,22 +58,22 @@ export class Tech extends React.Component {
     // }
 
     return (
-      <div className="thirdHeight blackBackground">
+      <div>
         <div className="flexContainer scroll" 
 
           // onMouseOver={scrollLeftRight}
         >
         {pics.map((pic, index) =>
-          <div>
+          <div key={index}>
             <img
               src={pic}
-              key={index}
               className="pic"
             />
           </div>
 
         )}
         </div>
+        <div className="lowerPadding blackBackground"></div>
       </div>
     )
   }

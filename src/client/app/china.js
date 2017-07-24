@@ -13,27 +13,24 @@ export class China extends React.Component {
 
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
-      <div id="china" className="windowSize flexContainer" 
+      <div className="windowSize flexContainer" 
       >
-        <div id="chinaOne" className="flexOneofTwo flexCenterAll">
-          <div id="centerContainer">
-            <h1 id="chinaTitle">China</h1>
-            <p id="chinaP">
+        <div className="flexOneofTwo flexCenterVertical flexCenterHorizontal whiteBackground">
+            <h1>China</h1>
+            <p className="width300">
               I’ve called Asia home since I moved to Hong Kong, 
-              with our family, at the age of six.  We lived in Southeast Asia for eight years.  
+              with family, at the age of six.  We lived in Southeast Asia for eight years.  
               I returned to the East with a job at China 
               Daily Website in Beijing, in 2007.  Beijing was home for nine years . . . and now I'm 
               in San Francisco. <br /><br />
               My favorite dish is Kung Pao Chicken.
             </p>
-
-          </div>
         </div>
 
 
-        <div id="chinaTwo" className="flexTwoofTwo flexCenterAll">
-          <img id="jonChineseFarmers"
-            className="flexCenterAll"
+        <div className="flexTwoofTwo flexCenterVertical flexCenterHorizontal blackBackground">
+          <img
+            className="farmers"
             src="../images/jonChineseFarmers.jpg"
           />
         </div>

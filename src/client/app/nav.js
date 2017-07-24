@@ -11,17 +11,21 @@ export class Nav extends React.Component {
 
   render () {
     return (
-        <div className="center-bottom-text nav">
+        <div className="centerBottom nav">
           <text
-
+            onClick={this.props.about}
           >( ABOUT )</text>
           <text
-          >( WORK )</text>
-          <text
+            onClick={this.props.tech}
           >( TECH )</text>
           <text
+            onClick={this.props.work}
+          >( WORK )</text>
+          <text
+            onClick={this.props.china}
           >( CHINA )</text>
           <text
+            onClick={this.props.contact}
           >( CONTACT )</text>
         </div>
     )

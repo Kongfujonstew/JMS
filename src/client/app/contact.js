@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+// import {Compass} from './compass';
 
 
 export class Contact extends React.Component {
@@ -27,13 +28,11 @@ export class Contact extends React.Component {
 
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
-      <div className="container">
+      <div>
         <div
-          className="twoThirdHeight flexCenterVertical"
+          className="fourFifthHeight flexCenterVertical scratchBackground"
         >
-
-          <img className="contactPic" src="../images/mapScratch.jpg"></img>
-
+        <h1 className="white">Contact</h1>
           <div className="flexContainer flexCenterHorizontal">
             <img className="social" src="../images/linkedin-128.png"></img>
 
@@ -43,7 +42,15 @@ export class Contact extends React.Component {
           </div>
 
         </div>
-        <div className="thirdHeight blackBackground footer"></div>
+
+        <div className="onefifthHeight blackBackground footer rightAlign">
+          <h1
+            className="nameBottom noMargin khaki"
+          >Jon Michael Stewart</h1>
+          <a className="noMargin khaki"
+            href="https://github.com/Kongfujonstew" target="_blank">www.github.com/Kongfujonstew
+          </a>
+        </div>
       </div>
     )
   }

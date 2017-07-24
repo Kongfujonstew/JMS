@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-
+import {Tech} from './tech';
 
 export class About extends React.Component {
   constructor(props) {
@@ -9,31 +9,34 @@ export class About extends React.Component {
 
   render () {
     return (
-      <div className="windowSize about">
-        <div className="flexContainer aboutBanner">
-          <h1 className="flexOneofThree flexCenterVertical">Simple</h1>
-          <h1 className="flexTwoofThree flexCenterVertical">Mobile</h1>
-          <h1 className="flexThreeofThree flexCenterVertical">Elegant</h1>
-        </div>
-
-        <div className="flexContainer aboutPic">
-          <div className="flexOneofTwo flexCenterVertical flexCenterHorizontal">
-            <img className="mapChair" src="../images/mapChair.jpg" />
+      <div>
+        <div className="windowSize blackBackground">
+          <div className="flexContainer oneQuarterHeight whiteBackground">
+            <h1 className="flexOneofThree flexCenterVertical">Simple</h1>
+            <h1 className="flexTwoofThree flexCenterVertical">Mobile</h1>
+            <h1 className="flexThreeofThree flexCenterVertical">Elegant</h1>
           </div>
-          <div className="flexOneofTwo flexCenterVertical">
-            <div className="jonFace">
-              <img className="jonFace grey" src="../images/jonFace.jpg" />
+
+          <div className="flexContainer threeQuarterHeight">
+            <div className="flexOneofTwo flexCenterVertical flexCenterHorizontal">
+              <img className="mapChair" src="../images/mapChair.jpg" />
             </div>
-            <p className="aboutP">
-            My name is Jon Michael Stewart. <br /><br />
+            <div className="flexTwoofTwo flexCenterVertical">
+              <div className="jonFace">
+                <img className="jonFace" src="../images/jonFace.jpg" />
+              </div>
+              <p className="khaki">
+              My name is Jon Michael Stewart. <br /><br />
 
-            I’m a JavaScript engineer and full stack software developer based in San Francisco, CA.  
+              I’m a full stack software developer based in San Francisco, CA.  
 
-            </p>
+              </p>
+            </div>
           </div>
+
+
         </div>
-
-
+        <Tech />
       </div>
     )
   }
