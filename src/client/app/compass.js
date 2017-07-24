@@ -16,8 +16,8 @@ export class Compass extends React.Component {
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
       <div>
-        <img className="bottomLeft oneFifthWidth" src="../images/compassOutter.png" />
-        <img className="bottomLeft oneFifthWidth" src="../images/compassInner.png" />
+        <img className="bottomLeft oneTenthWidth" src="../images/compassOutter.png" />
+        <img className="bottomLeft oneTenthWidth" src="../images/compassInner.png" />
       </div>
     )
   }

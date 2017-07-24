@@ -139,6 +139,10 @@ LAYOUT
   width: 20%;
 }
 
+.oneTenthWidth {
+  width: 10%;
+}
+
 .oneQuarterHeight {
   height: 25%;
 }
