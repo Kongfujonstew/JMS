@@ -23,7 +23,7 @@ export class About extends React.Component {
             </div>
             <div className="flexTwoofTwo flexCenterVertical">
               <div className="jonFace">
-                <img className="jonFace" src="../images/jonFace.jpg" />
+                <img className="jonFace" src="../images/jonface.jpg" />
               </div>
               <p className="khaki">
               My name is Jon Michael Stewart. <br /><br />
