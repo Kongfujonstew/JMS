@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
     "start": "node app.js",
     "dev": "webpack -d --watch",
-    "build": "webpack -p",
-    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register"
+    "build": "webpack -p"
   },
   "author": "",
   "license": "ISC",
@@ -22,10 +21,9 @@
     "mocha": "^3.4.1",
     "nodemon": "^1.11.0",
     "proptypes": "^0.14.4",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-hover": "^1.0.0",
-    "react-router": "^2.0.1",
     "should": "^11.2.1",
     "webpack": "^2.4.1"
   },

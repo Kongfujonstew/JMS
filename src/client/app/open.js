@@ -10,7 +10,8 @@ export class Open extends React.Component {
     super(props);
 
     this.state = {
-      loadState: 'preload'
+      loadState: 'preload',
+      compassDegree: '0'
     }
   }
 
@@ -45,13 +46,22 @@ export class Open extends React.Component {
     window.scrollTo(0, 4*window.innerHeight+100);
   }
 
-
+  changeCompassDegree (e) {
+    console.log('ccd fired, x =', e.screenX);
+    var deg = Math.atan2(200 - e.screenX, 800 - e.screenY) * 360 / Math.PI;
+    //somenewfunctionhere
+    this.setState({
+      compassDegree: deg
+    });
+  }
 
 
 
   render () {
     return (
-      <div className="windowSize background">
+      <div className="windowSize background"
+        onMouseMove={this.changeCompassDegree.bind(this)}
+      >
 
         <h1
           className="name openText"
@@ -66,7 +76,9 @@ export class Open extends React.Component {
           contact={this.jumpToContact.bind(this)}
         />
 
-        <Compass />
+        <Compass 
+          compassDegree={this.state.compassDegree}
+        />
 
       </div>
     )

@@ -14,7 +14,7 @@ BASE
 */
 
 html, body {
-  /*width: 100%;*/
+  max-width: 100%;
   min-height: 600px
   min-width: 800px;
   padding: 0px;
@@ -181,8 +181,7 @@ Title and Nav
 }
 
 .nav text {
-  color: white;
-  font-weight: 900;
+  font-weight: bold;
   padding: 0 2% 0 2%;
   z-index: 100;
 }
@@ -213,29 +212,6 @@ Module: About
   text-align: right;
 }
 
-/*.about {
-  background: repeating-linear-gradient(
-    45deg, 
-    lightgrey, 
-    lightgrey 20px, 
-    white 20px, 
-    white 22px
-  )
-}
-
-
-.aboutBanner {
-  height: 30%;
-  background-color: white;
-}*/
-
-
-/*.relative-center {
-  position: relative;
-  margin: 0 auto;
-  vertical-align: center;
-  bottom: 50%;
-}*/
 .jonFace {
 /*  border: 3px solid #FAFAD2;*/
   margin: 0 auto;
@@ -259,22 +235,27 @@ Module: About
 /*
 Module: Work
 */
+
 .lessHeight {
   padding: 10px 0 0 0;
-  height: 80%;
+  max-height: 80%;
 }
 
 .textPad {
   padding: 0 15%;
 }
 
+.halfWidth {
+  width:50%;
+}
 
+.maxWidth {
+  max-width: 100%
+}
 
 /*
 Module: Tech
 */
-
-
 
 .scroll {
   height: 58px;
@@ -293,14 +274,9 @@ Module: Tech
   height: 42px;
 }
 
-/*#blog {
-}*/
-
-
 /*
 Module: China
 */
-
 
 .whiteBackground {
   background-color: white;
@@ -318,7 +294,7 @@ Module: China
   box-shadow: 4px 4px 7px #FAFAD2;
   width: 300px;
   -webkit-filter: grayscale(100%);
-  filter: sepia(50%);
+  filter: sepia(30%);
 }
 
 /*

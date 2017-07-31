@@ -16,7 +16,7 @@ export class Work extends React.Component {
         <div className="flexContainer thirdHeight greyBackground">
           <div className="flexTwoofTwo textPad">
             <h1>Trov</h1>
-            <p className="width300">
+            <p className="maxWidth">
 
               A Realtime Geolocation Game 
 
@@ -30,7 +30,7 @@ export class Work extends React.Component {
           </div>
 
           <div className="flexTwoofTwo">
-            <img className="lessHeight" src="../images/trov.png" />
+            <img className="lessHeight maxWidth" src="../images/trov.png" />
           </div>
         </div>
 
@@ -40,7 +40,7 @@ export class Work extends React.Component {
 
         <div className="flexContainer thirdHeight">
           <div className="flexOneofTwo textPad">
-            <img className="lessHeight" src="../images/youkereoke.png"></img>
+            <img className="lessHeight maxWidth" src="../images/youkereoke.png"></img>
           </div>
 
           <div className="flexTwoofTwo textPad">
@@ -69,7 +69,7 @@ export class Work extends React.Component {
         <div className="flexContainer thirdHeight greyBackground">
           <div className="flexTwoofTwo textPad">
             <h1>Hault</h1>
-            <p className="width300">
+            <p className="maxWidth">
 
               Advanced Browser History
 
@@ -82,7 +82,7 @@ export class Work extends React.Component {
           </div>
 
           <div className="flexTwoofTwo">
-            <img className="lessHeight" src="../images/hault.png"></img>
+            <img className="lessHeight maxWidth" src="../images/hault.png"></img>
           </div>
         </div>
 
