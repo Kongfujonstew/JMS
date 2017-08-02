@@ -11,7 +11,7 @@ export class Nav extends React.Component {
 
   render () {
     return (
-        <div className="centerBottom nav">
+        <div className="nav bottom center">
           <text
             onClick={this.props.about}
           >( ABOUT )</text>

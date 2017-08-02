@@ -1,14 +1,3 @@
-
-/*base
-layout/grids/major containers
-modules - specific interfaces 90% of site
-
-state - impacts modules and layout-someVisualAttribute
-theme*/
-
-
-/*use classes don't use ids*/
-
 /*
 BASE
 */
@@ -41,13 +30,40 @@ p, a {
 LAYOUT
 */
 
-.windowSize {
+.page {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
+/*x`xx`*/
+.thirdHeight {
+  height: 33%;
+}
 
+.fourFifthHeight {
+  height: 80%;
+}
+
+.oneFifthHeight {
+  height: 20%;
+}
+
+.oneFifthWidth {
+  width: 20%;
+}
+
+.oneQuarterHeight {
+  height: 25%;
+}
+
+.threeQuarterHeight {
+  height: 75%;
+}
+
+/*
+Flex styles
+*/
 
 .flexContainer {
   display: -webkit-flex;
@@ -75,145 +91,78 @@ LAYOUT
   flex: 1 0 0;
 }
 
-.flexTwoofTWo {
-  width: 50%;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
-
 .flexOneofThree {
   width: 33.3%;
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
 }
 
-.flexTwoofThree {
-  width: 33.3%;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
-
-.flexThreeofThree {
-  width: 33.3%;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
-
-.center-top-text {
-  position: absolute;
-  top: 20px;
-  width: 400px;
-  left: 50%;
-  transform: translateX(-200px);
-}
-
-.centerBottom {
-  position: absolute;
-  width: 100%;
-  bottom: 25px;
-/*  bottom: -100;*/
-  text-align: center;
-}
-
-.twoThirdHeight {
-  height: 66%;
-}
-
-.thirdHeight {
-  height: 33%;
-}
-
-.fullHeight {
-  height: 100%;
-}
-
-.fourFifthHeight {
-  height: 80%;
-}
-
-.oneFifthHeight {
-  height: 20%;
-}
-
-.oneFifthWidth {
-  width: 20%;
-}
-
-.oneTenthWidth {
-  width: 10%;
-}
-
-.oneQuarterHeight {
-  height: 25%;
-}
-
-.threeQuarterHeight {
-  height: 75%;
-}
-
-
 /*
-Module: Open & Onload Animation
+Reused background
 */
+
+.background-black {
+  background-color: black;
+}
+
+.background-white {
+  background-color: white;
+}
+
 
 /*
 Title and Nav
 */
 
-.background {
+.background-tiledMap {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../images/mapPanels.jpg");
 }
 
-/*.bottom-margin {
-  padding: 0 0 15px 0;
-}*/
+.big {
+  font-size: 3.5em;
+}
 
-.openText {
-  color: white;
+.rightTextAlign {
   text-align: right;
   padding: 0px 20px;
 }
 
-.name {
-  font-size: 3.5em;
+.whiteText {
+  color: white;
 }
 
 .nav text {
   font-weight: bold;
   padding: 0 2% 0 2%;
-  z-index: 100;
 }
 
 .nav text:hover {
   cursor: pointer;
+  color: white;
 }
 
-.blackBackground {
-  background-color: black;
+.bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
 }
 
+.center {
+  text-align: center;
+}
 
 
 /*
 Module: About
 */
 
-.noMargin {
-  margin: 0 20px;
-}
-
 .khaki {
   color: #FAFAD2;
 }
 
-.rightAlign {
-  text-align: right;
-}
-
 .jonFace {
-/*  border: 3px solid #FAFAD2;*/
   margin: 0 auto;
   border-radius: 50%;
   width: 150px;
@@ -225,18 +174,15 @@ Module: About
   filter: sepia(20%);
 }
 
-
-.aboutP {
-  vertical-align: left;
-  padding: 0 125px 0 125px;
-  font-weight: 750;
-}
-
 /*
 Module: Work
 */
 
-.lessHeight {
+.topMargin {
+  padding: 70px 0 0 0;
+}
+
+.imgSize {
   padding: 10px 0 0 0;
   max-height: 80%;
 }
@@ -250,8 +196,9 @@ Module: Work
 }
 
 .maxWidth {
-  max-width: 100%
+  max-width: 80%
 }
+
 
 /*
 Module: Tech
@@ -265,26 +212,22 @@ Module: Tech
   overflow-y:hidden;
 }
 
+.scrollPadding {
+  margin: 0;
+  background-color: black;
+  padding: 0 0 42px 0;
+}
+
 .pic {
   height: 100%;
   margin: 0 25px 6px 25px;
 }
 
-.lowerPadding {
-  height: 42px;
-}
+
 
 /*
 Module: China
 */
-
-.whiteBackground {
-  background-color: white;
-}
-
-.blackBackground {
-  background-color: black;
-}
 
 .width300 {
   width: 300px;
@@ -297,6 +240,7 @@ Module: China
   filter: sepia(30%);
 }
 
+
 /*
 Module: Contact
 */
@@ -305,7 +249,7 @@ Module: Contact
   color: white;
 }
 
-.scratchBackground {
+.background-scratchMap {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../images/mapScratch.jpg");
@@ -327,22 +271,27 @@ Module: Contact
 
 .footer {
   width: 100%;
+  text-align: right;
+}
+
+.f-margin {
+  margin: 0 20px 0 0;
 }
 
 /*
 Module: Compass
 */
 
-.bottomLeft {
+.compassPosition {
   position: absolute;
   top: 70%;
   left: 5%;
 }
 
+.compassSize {
+  width: 10%;
+}
 
-/*#compass {
-  position: fixed;
-  top: 30px;
-  left: 30px;
-}*/
+
+
 

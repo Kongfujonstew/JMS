@@ -28,9 +28,9 @@ export class Contact extends React.Component {
 
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
-      <div>
+      <div className="">
         <div
-          className="fourFifthHeight flexCenterVertical scratchBackground"
+          className="fourFifthHeight flexCenterVertical background-scratchMap"
         >
         <h1 className="white">Contact</h1>
           <div className="flexContainer flexCenterHorizontal">
@@ -43,11 +43,11 @@ export class Contact extends React.Component {
 
         </div>
 
-        <div className="onefifthHeight blackBackground footer rightAlign">
+        <div className="onefifthHeight background-black footer f-margin">
           <h1
-            className="nameBottom noMargin khaki"
+            className="nameBottom f-margin khaki"
           >Jon Michael Stewart</h1>
-          <a className="noMargin khaki"
+          <a className="f-margin khaki"
             href="https://github.com/Kongfujonstew" target="_blank">www.github.com/Kongfujonstew
           </a>
         </div>

@@ -5,11 +5,7 @@ import {render} from 'react-dom';
 export class Compass extends React.Component {
   constructor(props) {
     super(props);
-
-
   }
-
-
 
   render () {
     var compassOutterStyle = {
@@ -21,10 +17,9 @@ export class Compass extends React.Component {
 
     return (
       <div>
-        <img className="bottomLeft oneTenthWidth" src="../images/compassOutter.png" 
-          style={compassOutterStyle}
+        <img className="compassPosition compassSize" src="../images/compassOutter.png" 
         />
-        <img className="bottomLeft oneTenthWidth" src="../images/compassInner.png" />
+        <img className="compassPosition compassSize" src="../images/compassInner.png" />
       </div>
     )
   }

@@ -49,7 +49,6 @@ export class Open extends React.Component {
   changeCompassDegree (e) {
     console.log('ccd fired, x =', e.screenX);
     var deg = Math.atan2(200 - e.screenX, 800 - e.screenY) * 360 / Math.PI;
-    //somenewfunctionhere
     this.setState({
       compassDegree: deg
     });
@@ -59,12 +58,12 @@ export class Open extends React.Component {
 
   render () {
     return (
-      <div className="windowSize background"
+      <div className="page background-tiledMap"
         onMouseMove={this.changeCompassDegree.bind(this)}
       >
 
         <h1
-          className="name openText"
+          className="big rightTextAlign white"
         >Jon Michael Stewart</h1>
 
 

@@ -13,9 +13,9 @@ export class China extends React.Component {
 
       // <img id="snapchat" className="social" src="../images/snapchat-128.png"></img>
     return (
-      <div className="windowSize flexContainer" 
+      <div className="page flexContainer" 
       >
-        <div className="flexOneofTwo flexCenterVertical flexCenterHorizontal whiteBackground">
+        <div className="flexOneofTwo flexCenterVertical flexCenterHorizontal">
             <h1>China</h1>
             <p className="width300">
               I’ve called Asia home since I moved to Hong Kong, 
@@ -28,7 +28,7 @@ export class China extends React.Component {
         </div>
 
 
-        <div className="flexTwoofTwo flexCenterVertical flexCenterHorizontal blackBackground">
+        <div className="flexOneofTwo flexCenterVertical flexCenterHorizontal background-black">
           <img
             className="farmers"
             src="../images/jonChineseFarmers.jpg"

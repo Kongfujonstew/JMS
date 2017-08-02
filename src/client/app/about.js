@@ -10,19 +10,19 @@ export class About extends React.Component {
   render () {
     return (
       <div>
-        <div className="windowSize blackBackground">
-          <div className="flexContainer oneQuarterHeight whiteBackground">
+        <div className="page background-black">
+          <div className="flexContainer oneQuarterHeight background-white">
             <h1 className="flexOneofThree flexCenterVertical">Simple</h1>
-            <h1 className="flexTwoofThree flexCenterVertical">Mobile</h1>
-            <h1 className="flexThreeofThree flexCenterVertical">Elegant</h1>
+            <h1 className="flexOneofThree flexCenterVertical">Mobile</h1>
+            <h1 className="flexOneofThree flexCenterVertical">Elegant</h1>
           </div>
 
           <div className="flexContainer threeQuarterHeight">
             <div className="flexOneofTwo flexCenterVertical flexCenterHorizontal">
               <img className="mapChair" src="../images/mapChair.jpg" />
             </div>
-            <div className="flexTwoofTwo flexCenterVertical">
-              <div className="jonFace">
+            <div className="flexOneofTwo flexCenterVertical">
+              <div>
                 <img className="jonFace" src="../images/jonface.jpg" />
               </div>
               <p className="khaki">

@@ -58,7 +58,7 @@ export class Tech extends React.Component {
     // }
 
     return (
-      <div>
+      <div className="scrollPadding">
         <div className="flexContainer scroll" 
 
           // onMouseOver={scrollLeftRight}
@@ -73,7 +73,6 @@ export class Tech extends React.Component {
 
         )}
         </div>
-        <div className="lowerPadding blackBackground"></div>
       </div>
     )
   }

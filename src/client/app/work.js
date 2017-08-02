@@ -9,12 +9,9 @@ export class Work extends React.Component {
 
   render () {
     return (
-      <div 
-        className="windowSize"
-      >
-
-        <div className="flexContainer thirdHeight greyBackground">
-          <div className="flexTwoofTwo textPad">
+      <div className="page">
+        <div className="flexContainer thirdHeight topMargin">
+          <div className="flexOneofTwo textPad">
             <h1>Trov</h1>
             <p className="maxWidth">
 
@@ -29,21 +26,17 @@ export class Work extends React.Component {
             </p>
           </div>
 
-          <div className="flexTwoofTwo">
-            <img className="lessHeight maxWidth" src="../images/trov.png" />
+          <div className="flexOneofTwo">
+            <img className="imgSize maxWidth" src="../images/trov.png" />
           </div>
         </div>
 
-
-
-
-
         <div className="flexContainer thirdHeight">
           <div className="flexOneofTwo textPad">
-            <img className="lessHeight maxWidth" src="../images/youkereoke.png"></img>
+            <img className="imgSize maxWidth" src="../images/youkereoke.png"></img>
           </div>
 
-          <div className="flexTwoofTwo textPad">
+          <div className="flexOneofTwo textPad">
             <h1>Youkereoke</h1>
             <p>
 
@@ -59,15 +52,8 @@ export class Work extends React.Component {
           </div>
         </div>
 
-
-
-
-
-
-
-
-        <div className="flexContainer thirdHeight greyBackground">
-          <div className="flexTwoofTwo textPad">
+        <div className="flexContainer thirdHeight">
+          <div className="flexOneofTwo textPad">
             <h1>Hault</h1>
             <p className="maxWidth">
 
@@ -81,8 +67,8 @@ export class Work extends React.Component {
 
           </div>
 
-          <div className="flexTwoofTwo">
-            <img className="lessHeight maxWidth" src="../images/hault.png"></img>
+          <div className="flexOneofTwo">
+            <img className="imgSize maxWidth" src="../images/hault.png"></img>
           </div>
         </div>
 
