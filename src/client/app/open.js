@@ -28,7 +28,7 @@ export class Open extends React.Component {
 
   jumpToTech () {
     console.log('jumpToTech')
-    window.scrollTo(0, window.innerHeight+100);
+    window.scrollTo(0, window.innerHeight+140);
   }
 
   jumpToWork () {

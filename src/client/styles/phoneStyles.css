@@ -15,13 +15,13 @@
 
   .compassPosition {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%);
   }
 
   .compassSize {
-    width: 40%;
+    width: 35%;
   }
 
   .nav text {
@@ -33,7 +33,7 @@
   .bottom {
     position: absolute;
     width: 100%;
-    bottom: 200px;
+    bottom: 10%;
   }
 
   .nav text:hover {

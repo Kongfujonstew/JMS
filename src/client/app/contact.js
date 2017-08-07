@@ -9,18 +9,21 @@ export class Contact extends React.Component {
   }
 
 
-  handleMailClick () {
-    window.open('mailto:jon@jonmichaelstewart.com');
-  }
-
-  handleLinkedinClick () {
-    window.open('https://www.linkedin.com/in/jon-michael-stewart-92219910/')
+  handleLinkedInClick () {
+    window.open('https://www.linkedin.com/in/jonstew/');
   }
 
   handleSkypeClick () {
-    window.open('http://hatscripts.com/addskype?kongfujonstew')
+    window.open('http://hatscripts.com/addskype?kongfujonstew');
   }
 
+  handleGithubClick () {
+    window.open('https://github.com/Kongfujonstew');
+  }
+
+  handleMailClick () {
+    location.href = 'mailto:jon@jonmichaelstewart.com';
+  }
 
   render () {
       // <img id="wechat" className="social" src="../images/wechat.png"></img>
@@ -32,13 +35,25 @@ export class Contact extends React.Component {
         <div
           className="fourFifthHeight flexCenterVertical background-scratchMap"
         >
+
         <h1 className="white">Contact</h1>
           <div className="flexContainer flexCenterHorizontal">
-            <img className="social" src="../images/linkedin-128.png"></img>
+            <img className="social" src="../images/socials/linkedin.svg"
+              onClick={this.handleLinkedInClick.bind(this)}
+            ></img>
 
-            <img className="social" src="../images/skype-128.png"></img>
+            <img className="social" src="../images/socials/skype.svg"
+              onClick={this.handleSkypeClick.bind(this)}
+            ></img>
 
-            <img className="social" src="../images/mail-128.png"></img>
+            <img className="social mailto" src="../images/socials/github.svg"
+              onClick={this.handleGithubClick.bind(this)}
+            ></img>
+
+            <img className="social mailto" src="../images/socials/email.svg"
+              onClick={this.handleMailClick.bind(this)}
+            ></img>
+
           </div>
 
         </div>

@@ -257,17 +257,23 @@ Module: Contact
 }
 
 .contactPic {
-  margin: 0 auto;
   width: 300px;
 }
 
 .social {
-  margin: 0 20px 0 20px;
+  margin: 59px 30px 0 30px;
+  height: 100px;
+  width: 100px;
+  filter: invert(100%);
 }
 
 .social:hover {
   cursor: pointer;
 }
+
+/*.mailto {
+  display: block;
+}*/
 
 .footer {
   width: 100%;
