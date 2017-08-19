@@ -39,5 +39,13 @@
   .nav text:hover {
     color: black;
   }
+  /*
+  Module: Arrows
+  */
+
+  .arrows {
+    display: none;
+  }
 
 }
+

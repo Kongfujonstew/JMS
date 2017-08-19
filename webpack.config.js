@@ -3,18 +3,19 @@ var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
 var APP_DIR = path.resolve(__dirname, 'src/client/app');
+var BLOG_DIR = path.resolve(__dirname, 'src/client/blog');
 
 var config = {
-  entry: APP_DIR,
+  entry: {app: APP_DIR, blog: BLOG_DIR},
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   module : {
     loaders : [
       {
         test : /\.jsx?/,
-        include : APP_DIR,
+        include : [APP_DIR, BLOG_DIR],
         loader : 'babel-loader',
         query : {
                 presets:['es2015', 'react']

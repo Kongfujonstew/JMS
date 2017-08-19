@@ -7,7 +7,7 @@ import {Work} from './work.js';
 import {Tech} from './tech.js'
 import {China} from './china.js';
 import {Contact} from './contact.js';
-import {Compass} from './compass.js';
+import {Arrows} from './arrows.js';
 
 
 class App extends React.Component {
@@ -23,6 +23,7 @@ class App extends React.Component {
         <Work />
         <China />
         <Contact />
+        <Arrows />
       </div>
     )
   }

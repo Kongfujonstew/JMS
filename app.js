@@ -12,7 +12,8 @@ console.log("Listening on port " + port);
 
 
 
-app.use(express.static('src/client'));
+app.use('/', express.static('src/client'));
+// app.use('/blog', express.static('src/client/blog.html'));
 // Render some console log output
 
 app.get('/test', function(req, res) {
