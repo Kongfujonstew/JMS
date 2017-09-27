@@ -1,0 +1,28 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  /*
+  Title and Nav
+  */
+  .background-tiledMap {
+    background-size: contain; }
+  .compassPosition {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%); }
+  .compassSize {
+    width: 35%; }
+  .nav text {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 2% 0 2%; }
+  .bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 10%; }
+  .nav text:hover {
+    color: black; }
+  /*
+  Module: Arrows
+  */
+  .arrows {
+    display: none; } }

@@ -1,13 +1,13 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-import {Open} from './open.js';
-import {About} from './about.js';
-import {Work} from './work.js';
-import {Tech} from './tech.js'
-import {China} from './china.js';
-import {Contact} from './contact.js';
-import {Arrows} from './arrows.js';
+import {Open} from './Open.js';
+import {About} from './About.js';
+import {Work} from './Work.js';
+import {Tech} from './Tech.js'
+import {China} from './China.js';
+import {Contact} from './Contact.js';
+import {Arrows} from './Arrows.js';
 
 
 class App extends React.Component {
@@ -16,6 +16,7 @@ class App extends React.Component {
   }
 
   render () {
+        // <Arrows />
     return (
       <div>
         <Open />
@@ -23,7 +24,6 @@ class App extends React.Component {
         <Work />
         <China />
         <Contact />
-        <Arrows />
       </div>
     )
   }

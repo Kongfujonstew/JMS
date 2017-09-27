@@ -1,12 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
-var BLOG_DIR = path.resolve(__dirname, 'src/client/blog');
+var APP_DIR = path.resolve(__dirname, 'src/components');
+var BUILD_DIR = path.resolve(__dirname, 'public');
 
 var config = {
-  entry: {app: APP_DIR, blog: BLOG_DIR},
+  entry: {app: APP_DIR},
   output: {
     path: BUILD_DIR,
     filename: '[name].js'
@@ -15,7 +14,7 @@ var config = {
     loaders : [
       {
         test : /\.jsx?/,
-        include : [APP_DIR, BLOG_DIR],
+        include : [APP_DIR],
         loader : 'babel-loader',
         query : {
                 presets:['es2015', 'react']

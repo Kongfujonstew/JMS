@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-// import {Compass} from './compass';
+// import {Compass} from './Compass';
 
 
 export class Contact extends React.Component {

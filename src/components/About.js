@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {Tech} from './tech';
+import {Tech} from './Tech';
 
 export class About extends React.Component {
   constructor(props) {

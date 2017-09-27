@@ -1,8 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 import classNames from 'classnames';
-import {Nav} from './nav.js';
-import {Compass} from './compass.js';
+import {Nav} from './Nav.js';
+import {Compass} from './Compass.js';
 
 
 export class Open extends React.Component {

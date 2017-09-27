@@ -1,0 +1,269 @@
+/*
+BASE
+*/
+html, body {
+  max-width: 100%;
+  min-height: 600px;
+  min-width: 800px;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em; }
+
+div, form, img {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+p, a {
+  font-family: lato; }
+
+/*
+LAYOUT
+*/
+.page {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+/*x`xx`*/
+.thirdHeight {
+  height: 33%; }
+
+.fourFifthHeight {
+  height: 80%; }
+
+.oneFifthHeight {
+  height: 20%; }
+
+.oneFifthWidth {
+  width: 20%; }
+
+.oneQuarterHeight {
+  height: 25%; }
+
+.threeQuarterHeight {
+  height: 75%; }
+
+/*
+Flex styles
+*/
+.flexContainer {
+  display: -webkit-flex;
+  display: flex; }
+
+.flexCenterVertical {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.flexCenterHorizontal {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.flexOneofTwo {
+  width: 50%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0; }
+
+.flexOneofThree {
+  width: 33.3%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0; }
+
+/*
+Reused background
+*/
+.background-black {
+  background-color: black; }
+
+.background-white {
+  background-color: white; }
+
+/*
+Title and Nav
+*/
+.background-tiledMap {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/mapPanels.jpg"); }
+
+.big {
+  font-size: 3.5em; }
+
+.rightTextAlign {
+  text-align: right;
+  padding: 0px 20px; }
+
+.whiteText {
+  color: white; }
+
+.nav text {
+  font-weight: bold;
+  padding: 0 2% 0 2%; }
+
+.nav text:hover {
+  cursor: pointer;
+  color: white; }
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 25px; }
+
+.center {
+  text-align: center; }
+
+/*
+Module: About
+*/
+.khaki {
+  color: #FAFAD2; }
+
+.jonFace {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 150px; }
+
+.mapChair {
+  box-shadow: 4px 4px 7px #FAFAD2;
+  width: 250px;
+  filter: sepia(20%); }
+
+/*
+Module: Work
+*/
+.topMargin {
+  padding: 70px 0 0 0; }
+
+.imgSize {
+  padding: 10px 0 0 0;
+  max-height: 80%; }
+
+.textPad {
+  padding: 0 15%; }
+
+.halfWidth {
+  width: 50%; }
+
+.maxWidth {
+  max-width: 80%; }
+
+/*
+Module: Tech
+*/
+.scroll {
+  height: 58px;
+  width: 100%;
+  background-color: white;
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.scrollPadding {
+  margin: 0;
+  background-color: black;
+  padding: 0 0 42px 0; }
+
+.pic {
+  height: 100%;
+  margin: 0 25px 6px 25px; }
+
+/*
+Module: China
+*/
+.width300 {
+  width: 300px; }
+
+.farmers {
+  box-shadow: 4px 4px 7px #FAFAD2;
+  width: 300px;
+  -webkit-filter: grayscale(100%);
+  filter: sepia(30%); }
+
+/*
+Module: Contact
+*/
+.white {
+  color: white; }
+
+.background-scratchMap {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/mapScratch.jpg");
+  background-position: center; }
+
+.contactPic {
+  width: 300px; }
+
+.social {
+  margin: 59px 30px 0 30px;
+  height: 100px;
+  width: 100px;
+  filter: invert(100%); }
+
+.social:hover {
+  cursor: pointer; }
+
+/*.mailto {
+  display: block;
+}*/
+.footer {
+  width: 100%;
+  text-align: right; }
+
+.f-margin {
+  margin: 0 20px 0 0; }
+
+/*
+Module: Compass
+*/
+.compassPosition {
+  position: absolute;
+  top: 70%;
+  left: 5%; }
+
+.compassSize {
+  width: 10%; }
+
+/*
+Module: Arrows;
+*/
+.arrows {
+  position: fixed;
+  bottom: 175px;
+  right: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  height: 150px;
+  width: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 10; }
+
+.arrowContainer {
+  position: relative;
+  display: flex;
+  margin-top: 14px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.arrowImage {
+  display: block;
+  margin: auto auto;
+  width: 30px;
+  align-self: center;
+  filter: invert(100%); }
+
+.rotate {
+  transform: rotate(180deg); }
+
+.arrowImage:hover {
+  cursor: pointer; }
