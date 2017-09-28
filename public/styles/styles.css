@@ -143,6 +143,7 @@ Module: Work
 */
 .workDiv {
   margin: 20px;
+  margin-left: 60px;
   height: 240px; }
   .workDiv h1 {
     margin: 0 0 10px 0; }
@@ -150,7 +151,7 @@ Module: Work
     padding: 0 600px 0 0; }
   .workDiv img, .workDiv video {
     float: right;
-    margin: 20px 200px 0 0;
+    margin: 20px 135px 0 0;
     max-width: 300px; }
 
 /*
