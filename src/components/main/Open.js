@@ -26,24 +26,19 @@ export class Open extends React.Component {
     window.scrollTo(0, window.innerHeight);
   }
 
-  jumpToTech () {
-    console.log('jumpToTech')
-    window.scrollTo(0, window.innerHeight+140);
-  }
-
   jumpToWork () {
     console.log('jumpToAbout')
-    window.scrollTo(0, 2*window.innerHeight+100);
+    window.scrollTo(0, 2*window.innerHeight);
   }
 
   jumpToChina () {
     console.log('jumpToAbout')
-    window.scrollTo(0, 3*window.innerHeight+100);
+    window.scrollTo(0, 2*window.innerHeight+1320);
   }
 
   jumpToContact () {
     console.log('jumpToAbout')
-    window.scrollTo(0, 4*window.innerHeight+100);
+    window.scrollTo(0, 3*window.innerHeight+1320);
   }
 
   changeCompassDegree (e) {
@@ -53,8 +48,6 @@ export class Open extends React.Component {
       compassDegree: deg
     });
   }
-
-
 
   render () {
     return (
@@ -69,7 +62,6 @@ export class Open extends React.Component {
 
         <Nav 
           about={this.jumpToAbout.bind(this)}
-          tech={this.jumpToTech.bind(this)}
           work={this.jumpToWork.bind(this)}
           china={this.jumpToChina.bind(this)}
           contact={this.jumpToContact.bind(this)}
@@ -84,6 +76,3 @@ export class Open extends React.Component {
   }
 }
 
-        // <p 
-        //   className="title openText"
-        // >Full Stack JavaScript</p>

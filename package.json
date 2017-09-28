@@ -20,7 +20,8 @@
     "proptypes": "^0.14.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-hover": "^1.0.0"
+    "react-hover": "^1.0.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

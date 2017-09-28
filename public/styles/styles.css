@@ -4,17 +4,18 @@ BASE
 html, body {
   max-width: 100%;
   min-height: 600px;
-  min-width: 800px;
+  min-width: 1030px;
   padding: 0px;
   margin: 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 1em; }
 
-div, form, img {
+div, form, img, h1, code, pre {
   margin: 0;
   padding: 0; }
 
 a {
+  color: #918151;
   text-decoration: none; }
 
 p, a {
@@ -140,25 +141,26 @@ Module: About
 /*
 Module: Work
 */
-.topMargin {
-  padding: 70px 0 0 0; }
-
-.imgSize {
-  padding: 10px 0 0 0;
-  max-height: 80%; }
-
-.textPad {
-  padding: 0 15%; }
-
-.halfWidth {
-  width: 50%; }
-
-.maxWidth {
-  max-width: 80%; }
+.workDiv {
+  margin: 20px;
+  height: 240px; }
+  .workDiv h1 {
+    margin: 0 0 10px 0; }
+  .workDiv p {
+    padding: 0 600px 0 0; }
+  .workDiv img, .workDiv video {
+    float: right;
+    margin: 20px 200px 0 0;
+    max-width: 300px; }
 
 /*
 Module: Tech
 */
+#tech {
+  position: absolute;
+  width: 100%;
+  top: 190%; }
+
 .scroll {
   height: 58px;
   width: 100%;
@@ -168,8 +170,7 @@ Module: Tech
 
 .scrollPadding {
   margin: 0;
-  background-color: black;
-  padding: 0 0 42px 0; }
+  background-color: black; }
 
 .pic {
   height: 100%;

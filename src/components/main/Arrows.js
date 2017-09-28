@@ -6,7 +6,6 @@ import classNames from 'classnames';
 export class Arrows extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
 
@@ -56,4 +55,4 @@ export class Arrows extends React.Component {
         </div>
     )
   }
-}
+};

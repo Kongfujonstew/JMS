@@ -36,7 +36,6 @@ export class About extends React.Component {
 
 
         </div>
-        <Tech />
       </div>
     )
   }

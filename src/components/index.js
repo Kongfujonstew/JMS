@@ -1,33 +1,13 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Main from './main/Main';
+import Blog from './blog/Blog';
 
-import {Open} from './Open.js';
-import {About} from './About.js';
-import {Work} from './Work.js';
-import {Tech} from './Tech.js'
-import {China} from './China.js';
-import {Contact} from './Contact.js';
-import {Arrows} from './Arrows.js';
-
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render () {
-        // <Arrows />
-    return (
-      <div>
-        <Open />
-        <About />
-        <Work />
-        <China />
-        <Contact />
-      </div>
-    )
-  }
-
-}
-
-render(<App/>, document.getElementById('JMS'));
+render(<BrowserRouter location={window.location}>
+          <div>
+            <Route path="/blog" exact component={Blog} />
+            <Route path="/" exact component={Main} />
+          </div>
+        </BrowserRouter>,
+  document.getElementById('JMS'));

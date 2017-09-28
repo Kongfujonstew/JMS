@@ -1,116 +1,6 @@
-/*
-BASE
-*/
+$link-color: #918151;
 
-
-
-html, body {
-  max-width: 100%;
-  min-height: 600px;
-  min-width: 800px;
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1em;
-}
-
-div, form, img {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p, a {
-  font-family: lato;
-}
-
-
-/*
-LAYOUT
-*/
-
-.page {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-/*x`xx`*/
-.thirdHeight {
-  height: 33%;
-}
-
-.fourFifthHeight {
-  height: 80%;
-}
-
-.oneFifthHeight {
-  height: 20%;
-}
-
-.oneFifthWidth {
-  width: 20%;
-}
-
-.oneQuarterHeight {
-  height: 25%;
-}
-
-.threeQuarterHeight {
-  height: 75%;
-}
-
-/*
-Flex styles
-*/
-
-.flexContainer {
-  display: -webkit-flex;
-  display: flex;
-}
-
-.flexCenterVertical {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center; 
-}
-
-.flexCenterHorizontal {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.flexOneofTwo {
-  width: 50%;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
-
-.flexOneofThree {
-  width: 33.3%;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
-
-/*
-Reused background
-*/
-
-.background-black {
-  background-color: black;
-}
-
-.background-white {
-  background-color: white;
-}
-
+@import 'base';
 
 /*
 Title and Nav
@@ -181,31 +71,31 @@ Module: About
 Module: Work
 */
 
-.topMargin {
-  padding: 70px 0 0 0;
+.workDiv {
+  margin: 20px;
+  height: 240px;
+  h1 {
+    margin: 0 0 10px 0;
+  }
+  p {
+    padding: 0 600px 0 0;
+  }
+  img, video {
+    float: right;
+    margin: 20px 200px 0 0;
+    max-width: 300px;
+  }
 }
-
-.imgSize {
-  padding: 10px 0 0 0;
-  max-height: 80%;
-}
-
-.textPad {
-  padding: 0 15%;
-}
-
-.halfWidth {
-  width:50%;
-}
-
-.maxWidth {
-  max-width: 80%
-}
-
 
 /*
 Module: Tech
 */
+
+#tech {
+  position: absolute;
+  width: 100%;
+  top: 190%;
+}
 
 .scroll {
   height: 58px;
@@ -218,7 +108,6 @@ Module: Tech
 .scrollPadding {
   margin: 0;
   background-color: black;
-  padding: 0 0 42px 0;
 }
 
 .pic {

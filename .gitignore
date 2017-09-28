@@ -3,3 +3,8 @@
 
 ## NPM ##
 node_modules/
+
+## Large files ##
+public/video/bollyphile.mov
+public/video/pcs.mov
+
